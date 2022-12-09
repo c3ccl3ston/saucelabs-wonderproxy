@@ -34,8 +34,19 @@ WonderProxy's port numbering scheme allows you to select whether additional prox
 |12000|No headers are added in **either** direction.|
 
 
-> [!NOTE] 
-> Requests that are transmitted via HTTPS are not modified by the proxy in any manner. The traffic remains encrypted as it passes through the proxy and no headers are ever added.
+> ℹ️  Requests that are transmitted via HTTPS are not modified by the proxy in any manner. The traffic remains encrypted as it passes through the proxy and no headers are ever added.
+
+### Sauce Labs – Getting Set Up
+
+1.  [Download the Sauce Connect Proxy client](https://docs.saucelabs.com/secure-connections/sauce-connect/installation/#downloading-sauce-connect-proxy) on your machine.
+    
+    ALWAYS USE THE LATEST VERSION
+    
+    Using older Sauce Connect versions may impact your ability to launch a tunnel or cause other technical issues.
+    
+2.  Extract the .zip file and move the folder to your machine's [home directory](https://en.wikipedia.org/wiki/Home_directory).
+    
+3.  Open your terminal and navigate to the Sauce Connect Proxy client bin directory.
 
 
 
