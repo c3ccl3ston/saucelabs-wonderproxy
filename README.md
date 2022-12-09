@@ -34,6 +34,11 @@ WonderProxy's port numbering scheme allows you to select whether additional prox
 |12000|No headers are added in **either** direction.|
 
 
+> [!NOTE] 
+> Requests that are transmitted via HTTPS are not modified by the proxy in any manner. The traffic remains encrypted as it passes through the proxy and no headers are ever added.
+
+
+
 
 
 
