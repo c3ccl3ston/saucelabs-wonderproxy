@@ -12,6 +12,14 @@ Test your applications globally and at scale. By combining Sauce Labs and Wonder
 
 ## Getting Started
 
+### WonderProxy – Getting Set Up
+
+To get started, **ensure you have**:
+
+1.  Added your desired servers to your [WonderProxy account](https://wonderproxy.com/my/servers).
+2.  Located your WonderProxy [username](https://wonderproxy.com/my/settings).
+3.  Generated a WonderProxy [proxy token](https://wonderproxy.com/my/settings#proxy-tokens). You'll enter this proxy token whenever the proxy configuration asks for a password.
+4.  Determined the [hostname](https://wonderproxy.com/my/servers) of the server you wish to connect to (e.g. `newyork.wonderproxy.com`).
 
 
 
