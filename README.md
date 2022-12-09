@@ -21,5 +21,20 @@ To get started, **ensure you have**:
 3.  Generated a WonderProxy [proxy token](https://wonderproxy.com/my/settings#proxy-tokens). You'll enter this proxy token whenever the proxy configuration asks for a password.
 4.  Determined the [hostname](https://wonderproxy.com/my/servers) of the server you wish to connect to (e.g. `newyork.wonderproxy.com`).
 
+>ℹ️ A username and proxy token are required to log into the proxy servers. Users cannot use Single Sign-On for proxy server authentication.
+
+#### Server Ports
+
+WonderProxy's port numbering scheme allows you to select whether additional proxy headers are included. Ports with the same last two digits will use the same exit IP. The available ports are listed below:
+
+|Port|Description|
+|10000|Full proxy headers are added to each request. **X-Forwarded-For** is sent to the server and **X-Host-IP** is returned to the client.|
+|11000|No headers are added to the request sent **to the destination server**; the response includes an **X-Host-IP** header, providing the IP of the server that handled the request.|
+|12000|No headers are added in **either** direction.|
+
+
+
+
+
 
 
