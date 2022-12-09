@@ -1,5 +1,3 @@
-# saucelabs-wonderproxy
-
 # Localization Testing at Scale
 Test your applications globally and at scale. By combining Sauce Labs and WonderProxy, you not only get the great benefits of globalized testing delivered by WonderProxy but also the scalability and robustness of testing on the Sauce Labs platform.
 
@@ -40,13 +38,24 @@ WonderProxy's port numbering scheme allows you to select whether additional prox
 
 1.  [Download the Sauce Connect Proxy client](https://docs.saucelabs.com/secure-connections/sauce-connect/installation/#downloading-sauce-connect-proxy) on your machine.
     
-    ALWAYS USE THE LATEST VERSION
-    
+    >⛔️ ALWAYS USE THE LATEST VERSION
     Using older Sauce Connect versions may impact your ability to launch a tunnel or cause other technical issues.
     
 2.  Extract the .zip file and move the folder to your machine's [home directory](https://en.wikipedia.org/wiki/Home_directory).
     
 3.  Open your terminal and navigate to the Sauce Connect Proxy client bin directory.
+
+## Starting Your Tunnel
+
+Once you have completed all of the steps above, you are now ready to start your first localized tunnel on Sauce Labs.
+
+In this example, we will be using the London proxy server on WonderProxy. For different locations substitute the below snippet with the appropriate `tunnel-name`, `proxy`, and `logfile`.
+
+1. Paste the snippet below into your terminal and run it. This will launch the tunnel.
+
+``` bash
+./sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --region us-west --tunnel-name london_tunnel --proxy "london.wonderproxy.com:11000" -w "$WONDERPROXY_USER:$WONDERPROXY_TOKEN" --logfile london.log
+```
 
 
 
