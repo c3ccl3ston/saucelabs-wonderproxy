@@ -28,6 +28,7 @@ To get started, **ensure you have**:
 WonderProxy's port numbering scheme allows you to select whether additional proxy headers are included. Ports with the same last two digits will use the same exit IP. The available ports are listed below:
 
 |Port|Description|
+|----|------------|
 |10000|Full proxy headers are added to each request. **X-Forwarded-For** is sent to the server and **X-Host-IP** is returned to the client.|
 |11000|No headers are added to the request sent **to the destination server**; the response includes an **X-Host-IP** header, providing the IP of the server that handled the request.|
 |12000|No headers are added in **either** direction.|
