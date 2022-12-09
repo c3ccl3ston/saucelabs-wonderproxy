@@ -38,6 +38,7 @@ WonderProxy's port numbering scheme allows you to select whether additional prox
 
 1.  [Download the Sauce Connect Proxy client](https://docs.saucelabs.com/secure-connections/sauce-connect/installation/#downloading-sauce-connect-proxy) on your machine.
 >⛔️   ALWAYS USE THE LATEST VERSION
+>
 >Using older Sauce Connect versions may impact your ability to launch a tunnel or cause other technical issues.    
 2.  Extract the .zip file and move the folder to your machine's [home directory](https://en.wikipedia.org/wiki/Home_directory).
 3.  Open your terminal and navigate to the Sauce Connect Proxy client bin directory.
