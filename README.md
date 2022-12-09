@@ -1,9 +1,8 @@
 # saucelabs-wonderproxy
 
-## Localization Testing at Scale
+# Localization Testing at Scale
 
 ## Prerequistes
----
 - Sauce Labs Account
 	- Sauce Labs username
 	- Sauce Labs access key
