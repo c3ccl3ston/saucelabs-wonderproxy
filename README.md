@@ -37,13 +37,9 @@ WonderProxy's port numbering scheme allows you to select whether additional prox
 ### Sauce Labs – Getting Set Up
 
 1.  [Download the Sauce Connect Proxy client](https://docs.saucelabs.com/secure-connections/sauce-connect/installation/#downloading-sauce-connect-proxy) on your machine.
-    
-    >⛔️ ALWAYS USE THE LATEST VERSION
-    >
-    Using older Sauce Connect versions may impact your ability to launch a tunnel or cause other technical issues.
-    
+>⛔️   ALWAYS USE THE LATEST VERSION
+>Using older Sauce Connect versions may impact your ability to launch a tunnel or cause other technical issues.    
 2.  Extract the .zip file and move the folder to your machine's [home directory](https://en.wikipedia.org/wiki/Home_directory).
-    
 3.  Open your terminal and navigate to the Sauce Connect Proxy client bin directory.
 
 ## Starting Your Tunnel
@@ -53,12 +49,20 @@ Once you have completed all of the steps above, you are now ready to start your 
 > ℹ️   In this example, we will be using the London proxy server on WonderProxy. For different locations substitute the below snippet with the appropriate `tunnel-name`, `proxy`, and `logfile`.
 
 1. Paste the snippet below into your terminal and run it. This will launch the tunnel.
-
 ``` bash
 ./sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --region us-west --tunnel-name london_tunnel --proxy "london.wonderproxy.com:11000" -w "$WONDERPROXY_USER:$WONDERPROXY_TOKEN" --logfile london.log
 ```
+2. To confirm your tunnel is up, look for the confirmation message in your terminal:
+```bash
+Secure remote tunnel provisioned. Tunnel ID: 876620c18...
 
+Sauce Connect is up, you may start your tests.
+```
 
+## Using Your New 'Global' Tunnel
+Follow the instructions found [here](https://docs.saucelabs.com/secure-connections/sauce-connect/setup-configuration/basic-setup/#basic-setup-with-a-test-script) to learn how to hook your tunnel into your automated test scripts.
+
+If you would like to test manually, you can find instructions [here](https://docs.saucelabs.com/secure-connections/sauce-connect/quickstart/#run-test) on how to proceed. However, in the URL field that is mentioned, `http://localhost:3000` may not be what you want to test but instead something like `https://www.etsy.com` to see how the site now loads for traffic in London.
 
 
 
